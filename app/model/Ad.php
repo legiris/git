@@ -3,6 +3,7 @@
 /**
  * Description of Ad
  *
+ * test
  * @author Admin
  */
 class Ad extends BaseManager
