@@ -3,7 +3,7 @@
 /**
  * Description of Ad
  *
- * test master znovu
+ * test master znovu opet
  * @author Admin
  */
 class Ad extends BaseManager
