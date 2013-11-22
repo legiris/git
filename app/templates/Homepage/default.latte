@@ -1,0 +1,27 @@
+{block content}
+
+<div id="page">
+
+<h1>Kolobazar</h1>
+
+<div id="top-menu">
+<p><a href="{$basePath}/pridat-inzerat/" title="Chci vložit inzerát">Přidat inzerát</a></p>
+</div>
+
+<div id="table">
+	{foreach $ads as $ad}
+	<div class="ad">	
+		<div class="ad-title"> {$ad->typeName}: {$ad->title} | {$ad->date} </div>
+		<div class="ad-description"> {$ad->text} </div>
+		<div class="ad-info"> Cena: {$ad->price} Kč &nbsp;&nbsp;&nbsp;&bull;&nbsp; Region: {$ad->regionName} &nbsp;&nbsp;&nbsp;&bull;&nbsp;
+			{$ad->categoryName} </div>
+	</div>	<!-- /ad -->
+	{/foreach}
+</div>	<!-- /table -->
+
+
+
+
+</div>	<!-- /page -->
+
+{/block}
